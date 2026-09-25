@@ -1,13 +1,13 @@
 ﻿using Amazon.Rekognition;
-using dz_5;
+using dz_4;
 using Telegram.Bot;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
 using Telegram.Bot.Types.ReplyMarkups;
 
-var recognitionService = new RekognitionService("aws_access", "aws_secret_access");
+var recognitionService = new RekognitionService("YOUR_AWS_ACCESS_KEY","YOUR_AWS_SECRET_KEY");
 
-var bot = new TelegramBotClient("tg_token");
+var bot = new TelegramBotClient("YOUR_TELEGRAM_BOT_TOKEN");
 
 var userModes = new Dictionary<long, string>();
 
