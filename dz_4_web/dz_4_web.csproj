@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.ML" Version="3.0.1" />
+		<PackageReference Include="Microsoft.ML.Vision" Version="3.0.1" />
+		<PackageReference Include="SciSharp.TensorFlow.Redist" Version="2.3.1" />
+	</ItemGroup>
+
+	<ItemGroup Label="animal">
+		<None Include="animal.mlnet">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+		</None>
+	</ItemGroup>
+
+</Project>

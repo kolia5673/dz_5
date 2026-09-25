@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "dz_4": {
+      "commandName": "Project"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    }
+  }
+}
